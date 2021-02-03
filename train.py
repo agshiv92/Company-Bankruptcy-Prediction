@@ -11,12 +11,12 @@ from azureml.core.run import Run
 
 run = Run.get_context()
 
-data = pd.read_csv('heart_failure_clinical_records_dataset.csv')
+data = pd.read_csv('bankruptcy_dataset.csv')
 
 # TODO: Split data into train and test sets.
 
-x= data.drop('DEATH_EVENT', axis=1)
-y= data['DEATH_EVENT']
+x= data.drop('Bankrupt?', axis=1)
+y= data['Bankrupt?']
 
 x_train, x_test, y_train, y_test= train_test_split(x,y, test_size= 0.2, random_state= 10)
 
