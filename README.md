@@ -29,14 +29,14 @@ In order to train and deploy best model using Azure Auto ML below steps are requ
 10. Consuming the best model using webservices
 
 Below configuration is used for Auto ML 
-1. Experiment Timeout 
-2. Task
-3. Primary Metric = Precision 
-4. Compute target 
-5. Target Variable 
-6. Cross Validation 
-7. Auto Featurization 
-8. Early Stop
+1. Experiment Timeout = 30 mins (Due to limitation of project lab availablity)
+2. Task = Classfication (As we are trying to predict only two classes whether the company will bankrupt or not) 
+3. Primary Metric = Precision (Precision is more than accuracy for this problem as investing in a bankrupt comapny will cause more hurt in comparison to not investing in a good company)
+4. Compute target = Created  
+5. Target Variable = "Bankrupt" (1=Bankrupt, 0 not bankrupt)
+6. Cross Validation =(4 cross validation is selected to get better result)
+7. Auto Featurization = (Set True to enable auto featurization)
+8. Early Stop = (Set True to ensure that the resources are not wasted for non performing models)
 
 ### Results
 
@@ -49,7 +49,8 @@ a. Changing the experiment time out time
 b. Enabling Deeplearning 
 c. Increasing the cross validation
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+###AutoML Run Widget:
+
 
 ## Hyperparameter Tuning
 *TODO*: What kind of moel did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
