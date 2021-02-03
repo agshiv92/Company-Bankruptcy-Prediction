@@ -47,13 +47,28 @@ Accuracy of the Model:-
 Ways to increase the a Precision:
 a. Changing the experiment time out time
 b. Enabling Deeplearning 
-c. Increasing the cross validation
+c. Increasing the cross validation 
 
 ###AutoML Run Widget:
 
 
 ## Hyperparameter Tuning
-*TODO*: What kind of moel did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+
+We have created a train.py script with following steps. 
+1. Importing the csv file containing the marketing campaigns data into our dataset.
+2. Cleaning the dataset, which included droping NaN values.
+3. Splitting our dataset into training set (80% of the data) & test set (20% of the data.)
+4. Creating a Logistic Regression model using sci-kit learn.
+5. Creating a directory to save the generated model into it.
+
+Once this file is ready, we are using this file in Hyperparameter Tuning:-
+
+Primary Metric = Precision
+Parameter Sampling = Random Parameter Sampling (As the dataset is huge ramdom parameter sampling will save time)
+Early Termination Policy = Bandit Policy 
+
+### Algorithm
+Logistic Regression is a supervisied binary classification algorithm that predicts the probability of a target varaible, returning either 1 or 0 (yes or no).
 
 
 ### Results
