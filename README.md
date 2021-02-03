@@ -52,7 +52,7 @@ c. Increasing the cross validation
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+*TODO*: What kind of moel did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
 
 ### Results
