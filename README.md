@@ -51,8 +51,14 @@ b. Enabling Deeplearning
 c. Increasing the cross validation 
 
 ###AutoML Run Widget:
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/1.JPG)
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/2.JPG)
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/3.JPG)
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/4.JPG)
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/5.JPG)
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/6.JPG)
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/7.JPG)
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/8.JPG)
 ## Hyperparameter Tuning
 
 We have created a train.py script with following steps. 
@@ -64,23 +70,39 @@ We have created a train.py script with following steps.
 
 Once this file is ready, we are using this file in Hyperparameter Tuning:-
 
-Primary Metric = Precision
-Parameter Sampling = Random Parameter Sampling (As the dataset is huge ramdom parameter sampling will save time)
-Early Termination Policy = Bandit Policy 
+* Primary Metric = Precision
+* Parameter Sampling = Random Parameter Sampling (As the dataset is huge ramdom parameter sampling will save time)
+* Early Termination Policy = Bandit Policy 
+
 
 ### Algorithm
 Logistic Regression is a supervisied binary classification algorithm that predicts the probability of a target varaible, returning either 1 or 0 (yes or no).
 
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+The best value of the Precision was found to be: 92.65%  using the following hyperparemeter values:
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/13.JPG)
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/9.JPG)
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/10.JPG)
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/11.JPG)
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/12.JPG)
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+Voting Ensemble model is giving better precision than the logistic regression model tuned with Hyperdrive.The following steps have been performed to deploy the model and interact with it:
+* Saving the best run model.
+* Writing the scoring script.
+* Creating an ACI deployment configuration with key-based authentication enabled.
+* Configuring InferenceConfig using the environment & the scoring script created as an entry script.
+* Deploying the model to an ACI webservice. The deployed model from Endpoints tab
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/15.JPG)
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/16.JPG)
+
+In order to get the prediction from the deployed model, we are sending the data in json format. We are also using REST end point and primary key to get the prediction
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/17.JPG)
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/18.JPG)
 
 ## Screen Recording
 [Screencast](https://youtu.be/Xnfkm2BUVZ0 "Screencast")
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
