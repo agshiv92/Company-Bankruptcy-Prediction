@@ -40,17 +40,18 @@ Below configuration is used for Auto ML
 
 ### Results
 
-Best Model:- 
-Precision of the Model:- 
-Accuracy of the Model:- 
+* Best Model:- Voting Ensemble
+Precision of the Model:- 93.35 % 
+Accuracy of the Model:- 78.87 % 
+Voting Ensemble is an ensemble machine learning model that combines the predictions from multiple other models. It is a technique that may be used to improve model performance, ideally achieving better performance than any single model used in the ensemble, that involves summing the predictions made by classification models.
 
-Ways to increase the a Precision:
+* Ways to increase the a Precision:
 a. Changing the experiment time out time
 b. Enabling Deeplearning 
 c. Increasing the cross validation 
 
 ###AutoML Run Widget:
-
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
 ## Hyperparameter Tuning
 
