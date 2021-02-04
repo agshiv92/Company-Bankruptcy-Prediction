@@ -2,16 +2,16 @@ from sklearn.linear_model import LogisticRegression
 import argparse
 import os
 import numpy as np
-from sklearn.metrics import mean_squared_error
 import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
 import pandas as pd
 from azureml.core.run import Run
+from sklearn.metrics import precision_score
 
 run = Run.get_context()
 
-data = pd.read_csv('bankruptcy_dataset.csv')
+data = pd.read_csv('data.csv')
 
 # TODO: Split data into train and test sets.
 
@@ -37,8 +37,8 @@ def main():
     
     joblib.dump(value=model, filename= './outputs/model.joblib')
 
-    accuracy = model.score(x_test, y_test)
-    run.log("Accuracy", np.float(accuracy))
+    precision = precision_score(y_test, model.predict(x_test), average='weighted')
+    run.log("Precision", np.float(precision))
 
 if __name__ == '__main__':
     main()
