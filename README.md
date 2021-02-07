@@ -81,9 +81,14 @@ Once this file is ready, we are using this file in Hyperparameter Tuning:-
 
 * Primary Metric = Precision
 * Parameter Sampling = Random Parameter Sampling (As the dataset is huge ramdom parameter sampling will save time)
+we are using RandomParamaterSampler to determine the best values of the hyperparameters: inverse regularization parameter, C and maximum number of iterations, max_iter.
+In this sampling algorithm, parameter values are randomly chosen from a set of discrete values or a distribution over a continuous range. Random Sampling is a great sampler to avoid bias, usually achieves great performance and it helps in discovering new hyperparameter values.
+Regularization strength is sampled over a uniform distribution with a minimum value of 0.5 and max value of 1, while the maximum number of iteration is sampled from a dicrete set of values which are 16, 32, 64 or 128.
 * Early Termination Policy = Bandit Policy 
-
-
+Bandit Policy is an early termination policy based on slack criteria, and the evaluation interval.
+Slack_factor is the ratio used to calculate the allowed distance from the best performing experiment run.
+Evaluation_interval is the frequency for applying the policy.
+The benefits of this stopping policy* is that any run that doesn't fall within the slack factor will be terminated so this helps us in making sure the experiment doesn't run for too long and burn up a lot of resources while trying to find the optimal paramater value.
 ### Algorithm
 Logistic Regression is a supervisied binary classification algorithm that predicts the probability of a target varaible, returning either 1 or 0 (yes or no).
 
