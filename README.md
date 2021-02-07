@@ -13,7 +13,7 @@ The data were collected from the Taiwan Economic Journal for the years 1999 to 2
 This is a binary classification task where our target column is Bankrupt which may have the value 1 in case the company goes bankrupt 0 in case the company does not goes bankrupt.
 
 ### Access
-The data has been downloaded from Kaggle then uploaded to Azure Machine Learning Studio's Datasets where it'll be used to train the models. Please clicke here to download the dataset from Kaggle
+The data has been downloaded from Kaggle then uploaded to Azure Machine Learning Studio's Datasets where it'll be used to train the models. Please clicke [here](https://www.kaggle.com/fedesoriano/company-bankruptcy-prediction "here") to download the dataset from Kaggle
 
 ## Automated ML
 In order to train and deploy best model using Azure Auto ML below steps are required:-
