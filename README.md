@@ -89,6 +89,7 @@ Bandit Policy is an early termination policy based on slack criteria, and the ev
 Slack_factor is the ratio used to calculate the allowed distance from the best performing experiment run.
 Evaluation_interval is the frequency for applying the policy.
 The benefits of this stopping policy* is that any run that doesn't fall within the slack factor will be terminated so this helps us in making sure the experiment doesn't run for too long and burn up a lot of resources while trying to find the optimal paramater value.
+We have selected slack factor as 2 and evaluation interval as 0.1
 ### Algorithm
 Logistic Regression is a supervisied binary classification algorithm that predicts the probability of a target varaible, returning either 1 or 0 (yes or no).
 
