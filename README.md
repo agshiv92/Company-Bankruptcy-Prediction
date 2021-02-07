@@ -4,7 +4,7 @@ Bankruptcy is an event when a company can not pay its debt. Bankruptcy give free
 ## Project Set Up and Installation
 Some part of this project required access of Azure Machine Learning portal. You may need to create the account to execute the code of this experiment. 
 ## Overview of the Project 
-![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/Presentation1.JPG)
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/Presentation1.jpg)
 
 ## Dataset
 
