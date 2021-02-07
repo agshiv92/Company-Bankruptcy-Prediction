@@ -90,11 +90,15 @@ Logistic Regression is a supervisied binary classification algorithm that predic
 
 ### Results
 The best value of the Precision was found to be: 92.65%  using the following hyperparemeter values:
-![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/13.JPG)
 
+![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/13.JPG)
+Hyperdrive Run Details Widget: This show the status of Hyperdrive experiment
 ![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/9.JPG)
+Hyperdrive  Accuracy: This shows the value of primary metric in different hyperdrive run
 ![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/10.JPG)
+Hyperdrive  Accuracy: This shows the value of primary metric in different hyperdrive run
 ![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/11.JPG)
+Hyperdrive  Scatterchart
 ![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/12.JPG)
 
 ## Model Deployment
@@ -109,6 +113,7 @@ Voting Ensemble model is giving better precision than the logistic regression mo
 
 In order to get the prediction from the deployed model, we are sending the data in json format. We are also using REST end point and primary key to get the prediction
 ![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/17.JPG)
+We can check the response from the model received as output
 ![Image of Yaktocat](https://github.com/agshiv92/Company-Bankruptcy-Prediction/blob/main/18.JPG)
 
 ## Screen Recording
