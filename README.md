@@ -119,4 +119,7 @@ We can check the response from the model received as output
 ## Screen Recording
 [Screencast](https://youtu.be/Xnfkm2BUVZ0 "Screencast")
 ## Standout Suggestions
-
+* As we are having enough and data and independent variable we can also include deep learning model in Azure Automl run which may increase the primary metric
+* By increasing the value of cross validation and time out for Azure auto ml run 
+* We can also create some additional feature based on business understanding. 
+* We can try BayesianSampling or GridSampling instead of RandomSampling. Also we can change early stop policy from Bandit policy to Median stopping policy or Truncation selection policy
